@@ -44,7 +44,7 @@ class Game(object):
     def tick(self):
         self.player.tick()
         self.playerII.tick()
-        self.ball.tick()
+        self.ball.tick(self.player, self.playerII)
 
     def draw(self):
         self.player.draw()
