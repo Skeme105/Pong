@@ -23,7 +23,9 @@ class Ball(object):
         self.dy = (random.choice(self.choicesx))
 
 
-    def tick(self):
+    def tick(self, player1, player2):
+        print(player1.pos1)
+        print(player2.pos2)
         size = self.game.screen.get_size()
         self.xx += self.dx
         self.yy += self.dy
